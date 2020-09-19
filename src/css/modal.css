@@ -1,0 +1,20 @@
+.RMM__body {
+    padding: 0;
+}
+
+.RMM__close-button {
+    background: black;
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+.RMM__close-button::before,
+.RMM__close-button::after {
+    width: 15px;
+}
+
+.RMM__close-button:hover {
+    background: black;
+    transform: scale(1.2);
+}

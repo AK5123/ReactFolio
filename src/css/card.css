@@ -1,0 +1,57 @@
+.card {
+    box-shadow: rgba(230, 234, 245, 0.89) 0px 0px 2rem -6px;
+    max-width: 370px;
+    min-height: 60vh;
+    background: white;
+    color: black;
+    text-align: center;
+    border-radius: 22px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "title" "desc" "btn";
+    grid-template-rows: 1fr 1fr 1fr;
+    color: white;
+}
+
+.card_title {
+    grid-area: title;
+    width: 100%;
+    height: 70%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+}
+
+.card_desc {
+    grid-area: desc;
+    width: 100%;
+    height: 100%;
+}
+
+.card_desc p{
+    margin : 5px;
+}
+
+.card_btn {
+    grid-area: btn;
+}
+
+.card_btn div{
+    margin: 0!important;
+    width: 75%;
+    margin-top: 3vh!important;
+}
+
+.ui .button {
+    padding: 0px;
+}
+
+.bottomborder {
+    border-bottom-left-radius: 22px !important;
+    border-bottom-right-radius: 22px !important;
+}
+
+.swiper-container {
+    width: 100%;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        body {
+            background: black;
+        }
+
+        button {
+            font-size: 20px;
+        }
+
+        .font {
+            font-family: "Raleway", sans-serif;
+            text-align: center;
+            font-weight: 900;
+            padding: 16px;
+            color: white;
+        }
+
+        video {
+            width: 30vw;
+        }
+
+        .border-me {
+            border: 2px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="font">Choose your memoji</h1>
+    <div class="row justify-content-center">
+        <div class="col">
+            <video id="memoji1">
+                <source src="./memoji1.mp4" />
+            </video>
+        </div>
+        <div class="col">
+            <video id="memoji2">
+                <source src="./memoji2.mp4" />
+            </video>
+        </div>
+        <div class="col">
+            <video id="memoji3">
+                <source src="./memoji3.mp4" />
+            </video>
+        </div>
+        <div class="col">
+            <video id="memoji4">
+                <source src="./memoji4.mp4" />
+            </video>
+        </div>
+        <div class="col">
+            <video id="memoji5">
+                <source src="./memoji5.mp4" />
+            </video>
+        </div>
+        <div class="col">
+            <video id="memoj6">
+                <source src="./memoji6.mp4" />
+            </video>
+        </div>
+    </div>
+    <button id="build" class="btn btn-default font" style="background: white; color: black; width: 100%">
+        Start building!
+    </button>
+
+    <script>
+        var lastSelected;
+        Array.from(document.querySelectorAll("video")).forEach((x) => {
+            x.muted = true;
+
+            x.addEventListener("mouseover", (e) => {
+                e.target.play();
+            });
+
+            x.addEventListener("click", (e) => {
+                if (lastSelected != null) {
+                    if (lastSelected.classList.contains("border-me")) {
+                        lastSelected.classList.remove("border-me");
+                    }
+                }
+                console.log("click");
+                e.target.classList.toggle("border-me");
+
+                lastSelected = e.target;
+            });
+        });
+
+        function createPost(opts) {
+            fetch("/build", {
+                method: "post",
+                body: JSON.stringify(opts),
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            }).then(function (response) {
+                build.innerHTML = "CLI Build initiated, You can now close this tab!";
+            });
+        }
+
+        build.addEventListener("click", function (e) {
+            e.target.innerHTML = " Started.... 🚀 ";
+
+            createPost({
+                memoji: lastSelected.id,
+            });
+        });
+    </script>
+</body>
+
+</html>
