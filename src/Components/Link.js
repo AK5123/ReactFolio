@@ -13,8 +13,10 @@ class Links extends Component {
     return (
       <div className="links">
         {icon("git", this.props.github, "github-square")}
-        {icon("linkedin", this.props.linkedin, "linkedin-square")}
-        {icon("medium", this.props.medium, "medium")}
+        {this.props.linkedin
+          ? icon("linkedin", this.props.linkedin, "linkedin-square")
+          : null}
+        {this.props.medium ? icon("medium", this.props.medium, "medium") : null}
         {icon("mail", "mailto:" + this.props.mail, "envelope")}
       </div>
     );

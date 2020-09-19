@@ -9,14 +9,17 @@
   justify-content: space-evenly;
   align-items: center;
 }
+
 .blackbg {
   background: black;
 }
+
 .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
   margin: 16px 3px;
 }
+
 .stuff {
   grid-area: stuff;
   display: grid;
@@ -37,7 +40,54 @@
   display: flex;
   flex-direction: row;
   text-align: center;
+  transition: all 0.5s;
 }
+
+.btns .btn-main:hover {
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.resume-phone {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.resume-phone i span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-bottom: 8px;
+  border-bottom: 1px solid white;
+}
+
+.resume {
+  min-height: 40px;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background: rgba(87, 78, 255, 1) !important;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.8px;
+  transform: scale(1);
+  transition: all 0.5s;
+  cursor: pointer;
+  border: 2px solid transparent;
+
+}
+
+.resume:hover {
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
 
 .btn-main {
   border: 0;
@@ -46,7 +96,10 @@
   text-align: center;
   min-height: 40px;
   min-width: 150px;
-  margin: 5px;
+  margin: 7px;
+  border: 2px solid transparent;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 .links {
@@ -64,11 +117,13 @@
   padding: 2px;
   font-size: 24px;
 }
+
 .flexit {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .hero-title {
   display: flex;
   justify-content: flex-start;
@@ -101,12 +156,23 @@
       "memoji"
       "content";
   }
+
+  .resume-phone {
+    display: flex;
+  }
+
+  .resume {
+    display: none;
+  }
+
   .stuff {
     align-content: flex-start;
   }
+
   .backbtn {
     left: 85%;
   }
+
   .proj-desc-container {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -119,31 +185,38 @@
   .hero-title {
     justify-content: center;
   }
+
   .btns {
     flex-direction: column;
     width: 100%;
   }
+
   #containerMain a button {
     width: 100%;
   }
+
   .btn-main {
     margin-bottom: 1rem;
     margin-left: 0rem;
     margin-right: 0rem;
   }
+
   .links {
     justify-content: center;
   }
+
   .desc p {
     text-align: center;
     font-size: 20px;
   }
 }
+
 @media (max-width: 772px) {
   .desc p {
     font-size: 17px;
   }
 }
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -171,7 +244,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   letter-spacing: 0.8px;
-  padding: 16px 50px;
+  padding: 16px 35px;
   border-radius: 0px;
   transition: all 800ms ease 0s;
 }
@@ -314,6 +387,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .page {
   position: absolute;
   top: 0;

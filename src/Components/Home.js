@@ -32,38 +32,57 @@ class Home extends Component {
   render() {
     console.log(this.props.json.projects, "dbvmb");
     return (
-      <div id="containerMain" className="content">
-        <div className="stuff">
-          <Typo name={this.props.json.name} />
-          <div className="btns">
-            <Link
-              to={{
-                pathname: "/Projects",
-                state: this.props.json.projects,
-              }}
-            >
-              <button onClick={this.handleProject} className="purple btn-main">
-                Checkout my work
-              </button>
-            </Link>
-
-            <Modalbutton>
-              <Experience
-                exp={{
-                  list: this.props.json.skills,
-                  details: this.props.json.experience,
+      <div>
+        <div id="containerMain" className="content">
+          <div className="stuff">
+            <Typo name={this.props.json.name} />
+            <div className="btns">
+              <Link
+                to={{
+                  pathname: "/Projects",
+                  state: this.props.json.projects,
                 }}
-              />
-            </Modalbutton>
+              >
+                <button
+                  onClick={this.handleProject}
+                  className="purple btn-main"
+                >
+                  Checkout my work
+                </button>
+              </Link>
+              <div className="resume">
+                <a href={this.props.json.resume} download>
+                  <i class="fa fa-file" aria-hidden="true"></i>
+                  <p>Resume / CV</p>
+                </a>
+              </div>
+
+              <Modalbutton>
+                <Experience
+                  exp={{
+                    list: this.props.json.skills,
+                    details: this.props.json.experience,
+                  }}
+                />
+              </Modalbutton>
+            </div>
+            <Description />
+
+            <Links
+              github={this.props.json.github}
+              linkedin={this.props.json.linkedin}
+              medium={this.props.json.medium}
+              mail={this.props.json.mail}
+            />
           </div>
-          <Description />
-          <Links
-            github={this.props.json.github}
-            linkedin={this.props.json.linkedin}
-            medium={this.props.json.medium}
-            mail={this.props.json.mail}
-          />
         </div>
+        <a href={this.props.json.resume}>
+          <div className="resume-phone">
+            <i class="fa fa-file" style={{ color: "white" }} aria-hidden="true">
+              &nbsp;&nbsp;&nbsp;<span style={{}}>Resume / CV</span>
+            </i>
+          </div>
+        </a>
       </div>
     );
   }
