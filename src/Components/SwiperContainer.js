@@ -74,6 +74,7 @@ class SwipeComponent extends React.Component {
   */
 
   componentDidMount() {
+    let curSlide = (this.props.location.states)? this.props.location.states.curSlide : 0 ;
     let swiper = new Swiper(".swiper-container", {
       effect: "coverflow",
       preventInteractionOnTransition: true,
@@ -81,7 +82,7 @@ class SwipeComponent extends React.Component {
       allowSlideNext: true,
       grabCursor: true,
       spaceBetween: 50,
-      initialSlide: 1,
+      initialSlide: curSlide,
       centeredSlides: true,
       slidesPerView: 3,
       mousewheel: {
@@ -95,17 +96,17 @@ class SwipeComponent extends React.Component {
         // when window width is <= 320px
         320: {
           slidesPerView: 1,
-          initialSlide: 0,
+          initialSlide: curSlide,
         },
         // when window width is <= 480px
         848: {
           slidesPerView: 1,
-          initialSlide: 0,
+          initialSlide: curSlide,
         },
 
         849: {
           slidesPerView: 2,
-          initialSlide: 0,
+          initialSlide: curSlide,
         },
       },
       coverflowEffect: {
@@ -145,7 +146,7 @@ class SwipeComponent extends React.Component {
                 <Link
                   to={{
                     pathname: "/ProjectDescription",
-                    state: card,
+                    state: {...card,curSlide:i},
                   }}
                 >
                   <p

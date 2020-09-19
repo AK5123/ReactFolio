@@ -4,7 +4,7 @@ class Description extends Component {
   render() {
     return (
       <div className="desc">
-        <p>Computer science undergrad and cybersec enthusiast</p>
+        <p>{this.props.data}</p>
       </div>
     );
   }

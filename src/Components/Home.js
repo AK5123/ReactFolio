@@ -52,7 +52,7 @@ class Home extends Component {
               </Link>
               <div className="resume">
                 <a href={this.props.json.resume} download>
-                  <i class="fa fa-file" aria-hidden="true"></i>
+                  <i className="fa fa-file" aria-hidden="true"></i>
                   <p>Resume / CV</p>
                 </a>
               </div>
@@ -66,7 +66,7 @@ class Home extends Component {
                 />
               </Modalbutton>
             </div>
-            <Description />
+            <Description data={this.props.json.preface} />
 
             <Links
               github={this.props.json.github}
@@ -74,15 +74,15 @@ class Home extends Component {
               medium={this.props.json.medium}
               mail={this.props.json.mail}
             />
+            <a href={this.props.json.resume}>
+              <div className="resume-phone">
+                <i class="fa fa-file" style={{ color: "white" }} aria-hidden="true">
+                  &nbsp;&nbsp;&nbsp;<span style={{}}>Resume / CV</span>
+                </i>
+              </div>
+            </a>
           </div>
         </div>
-        <a href={this.props.json.resume}>
-          <div className="resume-phone">
-            <i class="fa fa-file" style={{ color: "white" }} aria-hidden="true">
-              &nbsp;&nbsp;&nbsp;<span style={{}}>Resume / CV</span>
-            </i>
-          </div>
-        </a>
       </div>
     );
   }

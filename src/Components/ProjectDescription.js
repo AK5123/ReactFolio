@@ -23,6 +23,7 @@ class ProjectDescription extends Component {
             <Link
               to={{
                 pathname: "/Projects",
+                states: {curSlide: project.curSlide}
               }}
             >
               <a className="backicon">
