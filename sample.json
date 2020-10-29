@@ -1,11 +1,11 @@
 {
-  "name": "Mohanasundar",
-  "preface": "Full stack JS nerd and cyber security enthusiast",
-  "medium": "https://medium.com/@itsmohanpierce",
-  "github": "https://github.com/mohanpierce99",
-  "mail": "itsmohanpierce@gmail.com",
+  "name": "Kandavel",
+  "preface": "Aspiring full stack developer and veteran hackathon player",
+  "github": "https://github.com/ak5123",
+  "mail": "kanduarul@gmail.com",
   "memoji": "memoji1",
-  "linkedin": "https://www.linkedin.com/in/mohan-sundar-9881a7180/",
+  "linkedin": "https://www.linkedin.com/in/ak5123/",
+  "resume":"https://github.com/AK5123/Resume/raw/master/Kandavel_Resume.pdf",
   "skills": [
     "js",
     "react",
@@ -15,16 +15,15 @@
     "python",
     "sql",
     "azure",
-    "mongodb",
-    "docker"
+    "mongodb"
   ],
   "projects": [
     {
       "projectName": "Stegcloak",
-      "preface": "Hide secrets in strings",
+      "preface": "Hide secrets with invisible characters in plain text securely using passwords 🧙🏻‍♂️⭐",
       "projectDesc": "StegCloak is a pure JavaScript steganography module designed in functional programming style, to hide secrets inside text by compressing and encrypting with Zero Width Characters. It can be used to safely watermark strings, invisble scripts on webpages, texts on social media or for any other covert communication. Completely invisible!",
       "videoUrl": "https://www.youtube.com/watch?v=RBDqZwcGvQk",
-      "github": "https://github.com/mohanpierce99/stegcloak",
+      "github": "https://github.com/kurolabs/stegcloak",
       "medium": "https://blog.bitsrc.io/how-to-hide-secrets-in-strings-modern-text-hiding-in-javascript-613a9faa5787",
       "techStack": ["js", "bash", "nodejs", "react"],
       "hyperlinks": [["https://stegcloak.surge.sh", "Demo"]]
@@ -38,12 +37,13 @@
       "techStack": ["python", "html", "css", "js"]
     },
     {
-      "projectName": "Starstalk",
-      "preface": "Puputeer Web Scraping Tool to get analysis over your stargazers",
-      "projectDesc": "NodeJS tool written to get analysis over your stargazers, No API key needed",
-      "videoUrl": "https://res.cloudinary.com/dqmbs2chk/video/upload/v1599885416/starstalk_haahig.mp4",
-      "github": "https://github.com/mohanpierce99/Starstalk",
-      "techStack": ["js", "nodejs"]
+      "projectName": "Virtual Galaxy",
+      "preface": "VR React360 app that connects like-minded peers and allows you to watch anything together! ",
+      "projectDesc": "A React 360 web app that allows friends and strangers to watch anything together peer to peer using WebRTC and web-sockets. Wrote open source adapters to integrate firebase / reusable listeners in React 360.  Among the top 8 that Qualified for globals out of 12,100. Won 5000$USD for first place in India.",
+      "videoUrl": "https://youtu.be/u6wHv34VSVE",
+      "github": "https://github.com/AK5123/VR_Theatre",
+      "techStack": ["js", "nodejs", "html", "css"],
+      "hyperlinks": [["https://devpost.com/software/virtual-galaxy-gf4dxi","Facebook Hackathon Submission"]]
     },
     {
       "projectName": "Sonic sensor",
@@ -52,19 +52,36 @@
       "videoUrl": "https://res.cloudinary.com/dqmbs2chk/video/upload/v1598886336/demo_obb9eg.mp4",
       "github": "https://github.com/KuroLabs/sonicsensor",
       "techStack": ["js", "html", "css"],
-      "hyperlinks": [["https://sonic.surge.sh/proof/", "Demo"]]
+      "hyperlinks": [["https://sonic.surge.sh/proof/", "DemoSite"]]
+    },
+    {
+      "projectName": "ReactFolio",
+      "preface": "A CLI module which builds a Portfolio site in React... Sounds Interesting???",
+      "projectDesc": "A CLI based Portfolio builder that only asks you to enter your details in a json file and builds a minimilastic react portfolio based on it. Super simple to use and a great way to show off your cool projects! Also the entire portfolio your viewing was built using the same😉",
+      "videoUrl": "https://youtu.be/O7GDJ7d8MF0",
+      "github": "https://github.com/KuroLabs/ReactFolio",
+      "techStack": ["js", "nodejs", "html", "css","react","bash"]
+    },
+    {
+      "projectName": "SSN INSTINCTS",
+      "preface": "Website for College Cultural event!",
+      "projectDesc": "Built a scalable web application using Vanilla JavaScript for SSN INSTINCTS(National level cultural fest) 2K19. The entire site was built within 7 days to impress/onboard various sponsors for the event!",
+      "videoUrl": "https://res.cloudinary.com/dqmbs2chk/video/upload/v1600544261/ssninstincts_vxse9c.mp4",
+      "github": "https://github.com/SSNINSTINCTS2K19/SSNINSTINCTS2K19.github.io",
+      "techStack": ["js","html", "css"],
+      "hyperlinks":[["https://instincts.surge.sh","Demo"]]   
     }
   ],
   "experience": [
     {
-      "title": "Vue.ai – Software Engineering Intern",
-      "date": "May 2019-July 2019",
-      "content": "Built a complete groundup Node Js backend server for Vue.ai migrating 60 static web pages to a custom dynamic partial templated framework. Automated the usage of framework with building inhouse dev tools"
+      "title": "Mad Street Den (Vue.ai) – Software Engineering Intern, ",
+      "date": "Nov 2019 - Jan 2020",
+      "content": "Assisted in developing and refining VUE COMMERCE a primary service of MSD which provides visual-style based recommendations and end to end personalized solution in real-time. Also launched the extension for the above-mentioned service in Shopify Inc. Used React and Node.js as primary tools."
     },
     {
-      "title": "Mad street Den - Platform engineering intern",
-      "date": "June 2019 - Aug 2019",
-      "content": "Dockerizing and deployment of production grade Django servers.Automation - Utility python modules for Aws lambda. Built Poly Cloud-an open source python multi-cloud tenant sdk that provides a secure unified api for aws and azure."
+      "title": "Sigaram Technologies – Software Development Intern",
+      "date": "May 2019 - Jun 2019",
+      "content": "Worked on the Pickyto app developed using React Native. Fixed UI bugs and increased performance of front-end"
     }
   ]
-}
+} 
