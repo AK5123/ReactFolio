@@ -1,4 +1,4 @@
-## Reactfolio
+<h1 align="center" >Reactfolio</h1>
 
 A CLI based Portfolio builder that only asks you to enter your details in a json file and builds a minimilastic react portfolio based on it. Super simple to use and a great way to show off your cool projects !
 
@@ -14,7 +14,8 @@ cd ReactFolio
 npm install
 ```
 
-Modify the sample.json based on your profile. For [reference]("https://github.com/AK5123/ReactFolio/blob/master/sample.json")
+Modify the sample.json based on your profile. For [reference.](https://github.com/AK5123/ReactFolio/blob/master/sample.json)
+<br>
 To host your portfolio in surge,
 
 ```shell
